@@ -12,7 +12,7 @@ public class ArrayRotateNaiveApproach2 {
         int num_pos = sc.nextInt();
         int[] array = {1,2,3,4,5,6};
         int arr_last_index = array.length-1;
-        if(!(num_pos>0 && num_pos<arr_last_index)){
+        if(!((num_pos > 0) && (num_pos <= array.length))){
             System.out.println("Invalid value : "+num_pos+" for array rotation");
             System.out.println("Program will exit");
             System.exit(1);
