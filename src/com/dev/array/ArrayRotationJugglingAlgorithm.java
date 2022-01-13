@@ -27,7 +27,10 @@ public class ArrayRotationJugglingAlgorithm {
             return arraySize;
         if(arraySize==pos)
             return arraySize;
-        return calculateGCD(arraySize-pos,pos);
+        if(pos>arraySize)
+            return calculateGCD(pos-arraySize,arraySize);
+        else
+            return calculateGCD(arraySize-pos,pos);
     }
 
     public static void rotateArray(int[] array, int pos,int arraySize){
