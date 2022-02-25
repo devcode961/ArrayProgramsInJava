@@ -17,7 +17,7 @@ public class PrintRightToLeftTriangle {
                     System.out.print(" ");
                 }
                 else{
-                    System.out.print(j%2 != 0 ? " " : i+"");
+                    System.out.print(j%2 != 0 ? " " : i);
                 }
             }
             System.out.println();
